@@ -4,7 +4,7 @@ import email from '../../assets/email.svg'
 import google from '../../assets/google.svg'
 import facebook from '../../assets/facebook.svg'
 import X from '../../assets/X.svg'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 function Home() {
   const id = 100;

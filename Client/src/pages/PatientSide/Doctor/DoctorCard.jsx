@@ -20,17 +20,13 @@ const DoctorCard = ({ name, degree, specialty, rating, available }) => {
         <p className="doctor-availability">Rating: {rating} {available ? ', Available' : ', Not Available'}</p>
       </div>
       {isOpen && (
-        <div className="modal-container">
-          <div className="overlay">
-            <div className="modal">
-              <h2>{name}</h2>
-              <p>Degree: {degree}</p>
-              <p>Specialty: {specialty}</p>
-              <p>Rating: {rating} {available ? ', Available' : ', Not Available'}</p>
-              <button className="close-button" onClick={handleClose}>Close</button>
-            </div>
+        <div className='doc-details'>
+          <div className='doc-details-heading'>
+              <img/>
+              <h2>Hello</h2>
           </div>
         </div>
+
       )}
     </div>
   );
