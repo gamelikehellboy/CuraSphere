@@ -65,24 +65,9 @@
     width: 100vw;
     
   }
-
-  .close-button {
+  
+  .modal {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .close-button:hover {
-    background-color: #ccc;
-  }
-  
-  .overlay {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -91,16 +76,58 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 0;
-    pointer-events: none;
   }
   
-  .doc-details{
+  .modal-content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    top: 50%;
+    z-index: inherit;
+    width: 80%;
+    margin-top: auto;
+    gap: 50px;
+    overflow-y: auto;
+    max-height: 90vh;
+  }
+  
+  .close-button {
     position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: gray;
-    height:2000px;
-    width:80%;
+    background-color: transparent;
+    border: none;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .upload-btn{
+    display: flex;
+    justify-content: center;
+    padding-left: 220px;
+  }
+  .upload-text{
+    display: flex;
+    justify-content: center;
+  }
+  .root-cause-details-patient{
+    display: flex;
+    flex-direction: column;
+  }
+  .root-cause-container{
+    border: solid 2px;
+    border-radius: 9px;
+    height: 400px;
+    width: 600px;
+    overflow-y: auto;
+    max-height: 400px;
+  }
+  .summary-container{
+    border: solid 2px;
+    border-radius: 9px;
+    height: 400px;
+    width: 600px;
+    overflow-y: auto;
+    max-height: 400px;
   }

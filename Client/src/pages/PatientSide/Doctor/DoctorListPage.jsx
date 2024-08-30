@@ -64,7 +64,9 @@ function DoctorListPage() {
       </p>
       <div className="doctor-grid">
         {doctors.map((doctor, index) => (
-          <DoctorCard key={index} {...doctor}/>
+          <DoctorCard key={index} {...doctor}
+          
+          />
         ))}
       </div>
     </div>
